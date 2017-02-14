@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Phi_Weekend01_Starter</title>
+  <script src="jquery311.js" charset="utf-8"></script>
+  <script src="client.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h6>Phi_Weekend01_Starter_Phil Curtis</h6>
+  <h1>Acme Employee Information</h1>
+
+  <!-- <div id="newItemButton"><button href="#" id="showForm">New Employee Entry</button></div> -->
+
+  <!-- <div id="employees"> -->
+  <form id="employeeForm" name="employeeForm">
+    
+    <!--// NOTE: New Employee Form Section -->
+    <fieldset>
+      <legend>New Employee Data Entry</legend>
+      <ul>
+        <!--// NOTE:  Stack Overflow Help: nyedidikeke -->
+        <p>
+          <ul>
+            <!-- NOTE: This is what I had: -->
+            <!-- <label for="Add First Name"></label><li class="list"><input id="firstName" name="First Name" placeholder="First Name" type="text"></li> -->
+
+            <!-- NOTE: This is the correct code: -->
+            <li><label for="firstName">First Name</label>
+              <input type="text" name="First Name" placeholder="First Name" id="firstName" class="employeeFormInput" value=""></li>
+
+              <li><label for="lastName">Last Name</label>
+                <input type="text" name="Last Name" placeholder="Last Name" id="lastName" class="employeeFormInput" value=""></li>
+
+                <li><label for="idNumber">ID Number</label>
+                  <input type="text" name="ID Number" placeholder="ID Number" id="idNumber" class="employeeFormInput" value=""></li>
+
+                  <li><label for="jobTitle">Job Title</label>
+                    <input type="text" name="Job Title" placeholder="Job Title" id="jobTitle" class="employeeFormInput" value=""></li>
+
+                    <li><label for="annualSalary">Annual Salary</label>
+                      <input type="text" name="Annual Salary" placeholder="Annual Salary" id="annualSalary" class="employeeFormInput" value=""></li>
+                    </ul>
+                  </p>
+                  <p>
+                    <input id="pageRefresh" type="submit" value="Reset Form">
+                    <!-- NOTE: This is what I had: -->
+                    <!-- <button type="submit">Submit New Employee Data</button>-->
+                    <!-- NOTE: This is the correct code: -->
+                    <button type="button" id="submitNewEmployee" name="button">Submit New Employee</button>
+
+                    <!-- NOTE: Employee List Section -->
+                  </p>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Employee List</legend>
+                <table>
+                  <caption>Active Employees of the Acme Company</caption>
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Title</th>
+                      <th>ID Number</th>
+                      <th>Annual Salary</th>
+                      <th>Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody id="employeeTableBody">
+                    <ul id="new-ul">
+                    </ul>
+                  </tbody>
+                </table>
+
+                <!-- NOTE: Monthly Expenditures Section -->
+              </fieldset>
+
+              <!-- NOTE:  Finally remembered about code given in the assignment! -->
+              <div id="nameContainer"><!-- NOTE: empty container to use later --></div>
+              <hr>
+              <span id="displayData"></span>
+
+              <!-- NOTE: Company Expenditure Section -->
+              <fieldset>
+                <legend>Company Monthly Salary Expenditures</legend>
+                <label for="monthlyExpenditures" id="monthlyExpense">Monthly Salary Expendutures: <span id="monthlyExpenses">0</span></label>
+              </fieldset>
+            </form>
+          </body>
+          </html>
